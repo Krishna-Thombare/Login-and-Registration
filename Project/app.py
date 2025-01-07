@@ -6,7 +6,6 @@ import re
 import os
 
 load_dotenv('.env')
-load_dotenv('db.env')
 
 app = Flask(__name__)
 
@@ -55,7 +54,7 @@ def register():
         username = request.form['username']
         password = request.form['password']
         email = request.form['email']
-        cursor = mysql.connection.cursor(MySQLdb.cursor.dict(cursor))
+        cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
         cursor.execute('SELECT * FROM accounts WHERE username = %s', (username,))
         account = cursor.fetchone()
         
@@ -72,7 +71,7 @@ def register():
             msg = "Please fill out the form!"
             
         else:
-            cursor.execute('INSERT INTO accounts VALUES (None, %s, %s, %s)', (username, password, email,))
+            cursor.execute('INSERT INTO accounts VALUES (NULL, %s, %s, %s)', (username, password, email,))
             mysql.connection.commit()
             msg = 'You have successfully registered!'
     elif request.method == 'POST':
