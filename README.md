@@ -1,7 +1,7 @@
-## **Overview**
+## **Overview:**
 A simple user authentication system built with Flask and MySQL. This project allows users to register, log in, and log out using session-based authentication.
 
-## **Features**
+## **Features:**
 1. User Registration
 2. User Login
 3. User Logout
@@ -10,3 +10,11 @@ A simple user authentication system built with Flask and MySQL. This project all
 6. Environment Variable Configuration using .env
 7. Basic Form Validation
 8. Flask Templates Support
+
+## **Technologies Used:**
+1. Python 3
+2. Flask
+3. Flask-MySQLdb
+4. MySQL
+5. python-dotenv
+6. HTML/CSS (Templates)
