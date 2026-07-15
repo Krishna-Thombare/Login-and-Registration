@@ -12,7 +12,7 @@ A simple user authentication system built with Flask and MySQL. This project all
 8. Flask Templates Support
 
 ## **Technologies Used:**
-1. Python 3
+1. Python
 2. Flask
 3. Flask-MySQLdb
 4. MySQL
