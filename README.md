@@ -1,7 +1,7 @@
-**Overview**
+## **Overview**
 A simple user authentication system built with Flask and MySQL. This project allows users to register, log in, and log out using session-based authentication.
 
-**Features**
+## **Features**
 1. User Registration
 2. User Login
 3. User Logout
