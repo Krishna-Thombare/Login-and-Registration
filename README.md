@@ -16,5 +16,4 @@ A simple user authentication system built with Flask and MySQL. This project all
 2. Flask
 3. Flask-MySQLdb
 4. MySQL
-5. python-dotenv
-6. HTML/CSS (Templates)
+5. HTML/CSS
